@@ -1,0 +1,52 @@
+---
+title: 'Shiny Application and Reproducible Pitch'
+author: "Indira Pehlic"
+date: "26/08/2020"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview
+
+
+The shiny app uses the ggplot2 diamonds dataset to plot the price of diamonds by carat. The carat range can be changed using the slider at the top of the application, and the range of the plot’s x-axis would change accordingly. The app will show diamond price based on input of the following input variables: 
+
+- carat: weight or size of the diamond that can be from .32 carat to 4.0 carat
+- cut: quality of the diamond (Ideal, Premium, Very Good, Good, Fair)
+- clarity: measures how clear the diamond (IF, VVS2, VVS1, VS2, VS1, SI2, SI1, I1)
+
+## Documentation 
+
+Here is a summary of the ggplot2 diamonds dataset. The factors were measured in over 50,000 diamonds. 
+```{r echo=FALSE}
+library(ggplot2)
+data(diamonds)
+str(diamonds[,c(1:2,4,7)])
+```
+
+## Visualization 
+
+```{r pressure, echo=FALSE, warning=FALSE, message=FALSE}
+ # Scatter plot with smoothed means
+           plot<- ggplot(diamonds, aes(carat, price))+
+            geom_point(aes(colour = cut), alpha = 1/2) +
+            geom_smooth() +
+            scale_size_area(max_size = 2) +
+            ggtitle("Price vs. Carat")
+plot
+```
+
+## Links 
+
+- shiny app:
+- source code: 
+
+
+
+
+
