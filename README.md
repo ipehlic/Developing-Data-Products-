@@ -7,7 +7,7 @@ Github Repository: https://github.com/ipehlic/Developing-Data-Products-
 
 Shiny Application: https://ipehlic.shinyapps.io/Project/
 
-Ioslide Presentation: https://rpubs.com/ipehlic/652979
+Ioslide Presentation: https://rpubs.com/ipehlic/652982
 
 Description
 The shiny app uses the ggplot2 diamonds dataset to plot the price of diamonds by carat. The carat range can be changed using the slider at the top of the application, and the range of the plot’s x-axis would change accordingly. The app will show diamond price based on input of the following input variables: 
