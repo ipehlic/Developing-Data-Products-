@@ -5,9 +5,9 @@ Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitc
 
 Github Repository: 
 
-Shiny Application: 
+Shiny Application: https://ipehlic.shinyapps.io/Project/
 
-Ioslide Presentation: 
+Ioslide Presentation: https://rpubs.com/ipehlic/652979
 
 Description
 The shiny app uses the ggplot2 diamonds dataset to plot the price of diamonds by carat. The carat range can be changed using the slider at the top of the application, and the range of the plot’s x-axis would change accordingly. The app will show diamond price based on input of the following input variables: 
